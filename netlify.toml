@@ -8,7 +8,7 @@ package = "@netlify/plugin-nextjs"
 
 [[redirects]]
   from = "/search"
-  to = "http://169.254.169.254"
+  to = "http://127.0.0.1"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
